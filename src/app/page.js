@@ -1,102 +1,153 @@
+"use client";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className='App'>
+      {/* HEADER */}
+      <header className="App-header">
+        <nav className='name-nav'>
+          <ul>
+            <li>
+              <Image src="/assets/dev logo.png" width={45} height={45} alt="dev" className='devlogo-app' />
+            </li>
+            <li>
+              <h2>Tiagotj7</h2>
+            </li>
+          </ul>
+        </nav>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <nav className='icons-nav'>
+          <ul>
+            <li><h2>Social</h2></li>
+            <li>
+              <a href="https://github.com/Tiagotj7/" target="_blank">
+                <Image src="/assets/git dev.png" width={28} height={28} alt="GitHub" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/tiagocarvalhog2020/" target="_blank">
+                <Image src="/assets/link dev.png" width={28} height={28} alt="Linkedin" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/tiagotj7.dev/" target="_blank">
+                <Image src="/assets/insta logo dev.png" width={28} height={28} alt="Instagram" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      {/* MAIN 1 */}
+      <main className='main-content'>
+        <div className='geral1'>
+          <div className='information'>
+            <h1>Prazer,</h1>
+            <h1>Tiago</h1>
+            <h1>Carvalho!</h1>
+            <a href="https://www.linkedin.com/in/tiagocarvalhog2020/" target="_blank">
+              <button className='button-more'>
+                <h3>Saiba Mais!</h3>
+              </button>
+            </a>
+          </div>
+          <div className='logodev-container'>
+            <Image src="/assets/perfil11.png" width={250} height={250} alt="perfil" className='perfillogo-container' />
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* MAIN 2 */}
+      <div className='main2-content'>
+        <div className='geral2'>
+          <div className='next'>
+            <Image src="/assets/next logo.png" width={120} height={120} alt="next" className='nextlogo-container' />
+          </div>
+          <div className='note-container'>
+            <Image src="/assets/dev img.png" width={280} height={280} alt="notelog" className='notelogo-container' />
+          </div>
+        </div>
+        <div className='comment'>
+          <h1>Sobre Mim:</h1>
+          <p>
+            Sou desenvolvedor front-end e de software, com experiência em cibersegurança e apaixonado por criar soluções inovadoras.
+            Trabalho com HTML, CSS, JavaScript, Python, C, PHP, React, TypeScript e WordPress, desenvolvendo projetos que unem desempenho, segurança e usabilidade.
+            Meu foco está em entregar aplicações eficientes e adaptáveis às necessidades do usuário.
+            No meu portfólio e GitHub, você encontrará projetos que demonstram minha habilidade em desenvolvimento web, automação e otimização de processos.
+            Estou sempre em busca de desafios para evoluir e contribuir com a tecnologia. 💻🔒🌐
+          </p>
+        </div>
+      </div>
+
+      {/* MAIN 3 */}
+      <main className='main3-content'>
+        <div className='certificates-container'>
+          <div className='cert-list-container'>
+            <h1 className='cert-title'>CERTIFICADOS</h1>
+            <ul className='cert-list'>
+              <li>Cursando - Técnico em Desenvolvimento de Sistemas - SENAI</li>
+              <li>Internet do Comportamento (IoB) em Serviços</li>
+              <li>Públicos Digitais</li>
+              <li>Site utilizando Html, Css e Js</li>
+              <li>Curso Segurança em Tecnologia da Informação</li>
+              <li>Introdução ao Hacking e Pentest 2.0</li>
+              <li>Introdução ao Excel</li>
+              <li>Visual Studio Code</li>
+              <li>Desenvolvimento Moderno de Software</li>
+              <li>Informática básica</li>
+              <li>DIO.me</li>
+              <li>Bootcamp</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/13tjN7JVKBRxSTfySOSU3wBl5sT_az3gU/view?usp=drive_link" target="_blank">
+              <button className='curriculo-button'>CURRÍCULO</button>
+            </a>
+          </div>
+          <div className='brain-image-container'>
+            <Image src="/assets/cer3.png" width={300} height={300} alt="Brain" className='brain-image' />
+          </div>
+        </div>
+      </main>
+
+      {/* MAIN 4 - VIDEO */}
+      <main className='main4-content'>
+        <div className="video-background">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="background-video"
+            poster="/videos/poster.jpg"
+          >
+            <source src="/assets/videos/clip-dev.mp4" type="video/mp4" />
+            <p className="video-fallback">Seu navegador não suporta vídeos HTML5.</p>
+          </video>
+        </div>
+      </main>
+
+      {/* MAIN 5 */}
+      <main className='main5-content'>
+        <div className='contact-container'>
+          <div className='sub-contact1'>
+            <h3>Email</h3>
+            <p>tiagotj7dev@gmail.com</p>
+          </div>
+          <div className='contactlogo-container'>
+            <h1 className='contact-text'>Contato</h1>
+            <Image src="/assets/contato dev.png" width={120} height={120} alt="contactlogo" className='contactlogo' />
+          </div>
+          <div className='sub-contact2'>
+            <h3>Phone</h3>
+            <p>(75)9 </p>
+          </div>
+        </div>
+      </main>
+
+      {/* FOOTER */}
+      <footer>
+        <p>&copy; 2025. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Tiagotj7.dev.</p>
       </footer>
     </div>
   );

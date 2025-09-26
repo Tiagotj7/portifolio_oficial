@@ -1,26 +1,380 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  font-family: "Orbitron", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/*--------------------------------------------------------------------------*/
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #ff4739;
+  padding: 5px 3%;
+  height: 100px;
+}
+
+/*-------------------------------Img-Header-------------------------------------*/
+
+.name-nav ul {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/*-------------------------------Img-Header-------------------------------------*/
+
+.icons-nav img {
+  height: 3vw;
+  cursor: pointer;
+}
+
+.icons-nav img:hover {
+  transform: scale(1.1);
+}
+
+.name-nav img {
+  height: 3vw;
+}
+
+/*---------------------------------Main-----------------------------------------*/
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: -5rem;
+}
+
+.geral1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/*------------------------------Logo-Main-----------------------------------------*/
+
+.logodev-container {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.perfillogo-container {
+  height: 50vw;
+  max-height: 500px;
+}
+
+/*---------------------------Information-Main--------------------------------------*/
+
+.information {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 40px;
+}
+
+.information h1 {
+  margin: 5px 0; /* Reduz o espaçamento entre os títulos */
+  line-height: 1; /* Diminui a altura da linha */
+  text-align: start;
+}
+
+/*---------------------------Button-Main--------------------------------------------*/
+
+.button-more {
+  border-radius: 5px;
+  background-color: #ff4739;
+  margin-top: 100px;
+  font-family: "Orbitron", sans-serif;
+  width: 30%;
+}
+
+.button-more:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px #00a6ff;
+  font-style: italic;
+}
+
+.button-more:active{
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px #a9c0cc;
+}
+
+/*---------------------------------Main-2----------------------------------------*/
+
+.main2-content {
+  background-color: #141414;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.geral2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nextlogo-container {
+  height: 30vw;
+  max-height: 150px;
+  z-index: 1; /* Garante que a imagem fique acima */
+}
+
+.note-container {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.notelogo-container {
+  height: 40vw;
+  max-height: 400px;
+}
+
+.comment {
+  color: white;
+  padding: 100px;
+}
+
+.comment h1 {
+  color: #ff4739;
+  font-size: 25px;
+  margin-top: 160px;
+}
+
+.comment p {
+  font-size: 18px;
+  text-align: center;
+  text-align: justify;
+  max-width: 800px;
+}
+
+/*---------------------------------Main-3----------------------------------------*/
+
+.main3-content {
+  background-color: black;
+  margin: 0;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificates-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  gap: 80px;
+}
+
+.cert-list-container {
+  flex: 1;
+  background-color: #141414;
+  padding: 30px;
+  border-radius: 5px;
+  max-width: 450px;
+}
+
+.cert-title {
+  color: #ff4739;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: left;
+  text-align: center;
+}
+
+.cert-list {
+  list-style-type: disc;
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.cert-list li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.curriculo-button {
+  background-color: #ff4739;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+}
+
+.curriculo-button:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px #00a6ff;
+  font-style: italic;
+}
+
+.curriculo-button:active{
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px #a9c0cc;
+}
+
+.brain-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brain-image {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .certificates-container {
+    flex-direction: column;
+  }
+
+  .cert-list-container {
+    margin-bottom: 30px;
+    max-width: 100%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/*---------------------------------Main-4----------------------------------------*/
+
+/* Main4 Video Styles */
+.main4-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-fallback {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+/*---------------------------------Main-5----------------------------------------*/
+
+.main5-content{
+  color: #ff4739;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactlogo-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+}
+
+.contactlogo{
+  margin-top: 0; /* Remove qualquer margem extra acima da imagem */
+}
+
+.contact-text{
+display: flex;
+text-align: center;
+color: white;
+font-size: 80px;
+margin-bottom: 5px; /* Reduz o espaçamento abaixo do h1 */
+}
+
+.sub-contact1,.sub-contact2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.sub-contact1 p,
+.sub-contact2 p{
+  color: white;
+  margin-top: 0;
+}
+
+.sub-contact1 h3,
+.sub-contact2 h3{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.contact-container{
+  display: flex;
+}
+
+.contactlogo{
+  height: 20vw;
+}
+
+/*---------------------------------Footer----------------------------------------*/
+
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 0;
 }
