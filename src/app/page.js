@@ -5,39 +5,32 @@ export default function Home() {
   return (
     <div className='App'>
       {/* HEADER */}
-      <header className="App-header">
-        <nav className='name-nav'>
-          <ul>
-            <li>
-              <Image src="/assets/dev logo.png" width={45} height={45} alt="dev" className='devlogo-app' />
-            </li>
-            <li>
-              <h2>Tiagotj7</h2>
-            </li>
-          </ul>
-        </nav>
+<header className="App-header">
+  {/* Lado esquerdo */}
+  <div className='name-nav'>
+    <Image src="/assets/dev logo.png" width={45} height={45} alt="dev" className='devlogo-app' />
+    <h2>Tiagotj7</h2>
+  </div>
 
-        <nav className='icons-nav'>
-          <ul>
-            <li><h2>Social</h2></li>
-            <li>
-              <a href="https://github.com/Tiagotj7/" target="_blank">
-                <Image src="/assets/git dev.png" width={28} height={28} alt="GitHub" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/tiagocarvalhog2020/" target="_blank">
-                <Image src="/assets/link dev.png" width={28} height={28} alt="Linkedin" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/tiagotj7.dev/" target="_blank">
-                <Image src="/assets/insta logo dev.png" width={28} height={28} alt="Instagram" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+  {/* Lado direito */}
+  <div className='icons-nav'>
+    <h3>Social</h3> {/* Mantém o texto Social acima dos ícones */}
+    <div className='icons-list'>
+      <a href="https://github.com/Tiagotj7/" target="_blank">
+        <Image src="/assets/git dev.png" width={28} height={28} alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/tiagocarvalhog2020/" target="_blank">
+        <Image src="/assets/link dev.png" width={28} height={28} alt="Linkedin" />
+      </a>
+      <a href="https://www.instagram.com/tiagotj7.dev/" target="_blank">
+        <Image src="/assets/insta logo dev.png" width={28} height={28} alt="Instagram" />
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
 
       {/* MAIN 1 */}
       <main className='main-content'>
@@ -109,25 +102,8 @@ export default function Home() {
         </div>
       </main>
 
-      {/* MAIN 4 - VIDEO */}
+      {/* MAIN 4 */}
       <main className='main4-content'>
-        <div className="video-background">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="background-video"
-            poster="/videos/poster.jpg"
-          >
-            <source src="/assets/videos/clip-dev.mp4" type="video/mp4" />
-            <p className="video-fallback">Seu navegador não suporta vídeos HTML5.</p>
-          </video>
-        </div>
-      </main>
-
-      {/* MAIN 5 */}
-      <main className='main5-content'>
         <div className='contact-container'>
           <div className='sub-contact1'>
             <h3>Email</h3>

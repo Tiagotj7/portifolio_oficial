@@ -16,43 +16,57 @@ code {
 }
 
 /*--------------------------------------------------------------------------*/
+
 .App {
   text-align: center;
 }
 
+/*-------------------------------Nav-Header-------------------------------------*/
+
 .App-header {
   background-color: black;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 11px;
-  color: #ff4739;
-  padding: 5px 3%;
+  justify-content: space-between; /* esquerda e direita */
+  align-items: center; /* centraliza verticalmente */
+  padding: 10px 3%;
   height: 100px;
+  color: #ff4739;
 }
 
-/*-------------------------------Img-Header-------------------------------------*/
-
-.name-nav ul {
+/* Lado esquerdo (logo + nome) */
+.name-nav {
   display: flex;
   align-items: center;
-  position: relative;
+  gap: 10px; /* espaço entre logo e nome */
 }
 
-/*-------------------------------Img-Header-------------------------------------*/
+.name-nav h2 {
+  margin: 0;
+}
+
+/* Lado direito (ícones sociais) */
+.icons-nav {
+  display: flex;
+  flex-direction: column; /* nome em cima, ícones embaixo */
+  align-items: center; /* centraliza verticalmente os itens dentro do bloco */
+  gap: 5px;
+}
+
+.icons-list {
+  display: flex;
+  gap: 10px; /* espaço entre os ícones */
+}
 
 .icons-nav img {
-  height: 3vw;
   cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .icons-nav img:hover {
   transform: scale(1.1);
 }
 
-.name-nav img {
-  height: 3vw;
-}
+
 
 /*---------------------------------Main-----------------------------------------*/
 
@@ -85,6 +99,8 @@ main {
 .perfillogo-container {
   height: 50vw;
   max-height: 500px;
+  width: auto;
+  object-fit: contain;
 }
 
 /*---------------------------Information-Main--------------------------------------*/
@@ -262,6 +278,9 @@ main {
 .brain-image {
   max-width: 100%;
   max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Responsive adjustments */
@@ -276,43 +295,10 @@ main {
   }
 }
 
-/*---------------------------------Main-4----------------------------------------*/
-
-/* Main4 Video Styles */
-.main4-content {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.background-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video-fallback {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-}
 
 /*---------------------------------Main-5----------------------------------------*/
 
-.main5-content{
+.main4-content{
   color: #ff4739;
   margin: 0;
   padding: 0;
@@ -367,6 +353,8 @@ margin-bottom: 5px; /* Reduz o espaçamento abaixo do h1 */
 
 .contactlogo{
   height: 20vw;
+  width: auto;
+  object-fit: contain;
 }
 
 /*---------------------------------Footer----------------------------------------*/
